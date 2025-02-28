@@ -1,0 +1,128 @@
+body {
+    display: flex;
+    flex-direction: column;
+
+    background-size: cover; /* เพิ่มบรรทัดนี้ */
+    background-position: center; /* เพิ่มบรรทัดนี้ */
+    min-height: 100vh;
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f8f9fa;
+}
+
+header, nav, main {
+    padding: 20px;
+}
+
+footer {
+    margin-top: auto;
+    text-align: center;
+    padding: 10px;
+    background-color: #343a40;
+    color: #ffffff;
+    width: 100%;
+    box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.1);
+}
+
+footer p {
+    margin: 0;
+    font-size: 14px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 16px;
+    text-align: left;
+    border: none; /* เอาเส้นขอบตารางออก */
+}
+
+table th, table td {
+    padding: 12px 15px;
+    border: none; /* เอาเส้นขอบเซลล์ออก */
+}
+
+table th {
+    background-color: #343a40;
+    color: #ffffff;
+}
+
+table tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+table tr:hover {
+    background-color: #ddd;
+}
+
+.card {
+    background: rgba(255, 255, 255, 0.8);
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    margin: 10px 0;
+    backdrop-filter: blur(10px);
+    width: 20%;
+    height: 100;
+    align-items: center;
+    
+}
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    
+}
+.profile {
+    width: 140%;
+}
+
+.login-container {
+    max-width: 400px;
+    margin: auto;
+    padding: 20px;
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.login-container h1 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.login-container label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+.login-container input[type="email"],
+.login-container input[type="password"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+.login-container input[type="submit"] {
+    width: 100%;
+    padding: 10px;
+    background-color: #343a40;
+    color: #ffffff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.login-container input[type="submit"]:hover {
+    background-color: #495057;
+}
+
+.login-container .message {
+    text-align: center;
+    color: red;
+    margin-top: 10px;
+}
